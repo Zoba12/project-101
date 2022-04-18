@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+      <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-first-aid-icon'></i>
+        <div class="logo_name">MENU</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+
+      <li>
+        <a onclick="showmenu()">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Tests</span></a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+         <a onclick="showmenu1()">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Staffs</span>
+       </a>
+       <span class="tooltip">Stf</span>
+     </li>
+     <li>
+         <a onclick="showmenu2()">
+         <i class='bx bxs-message-dots' ></i>
+         <span class="links_name">Message Us</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>         
+     <a onclick="showmenu3()">
+         <i class='bx bxs-bank'></i>
+         <span class="links_name">Add payment method</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+      <a onclick="showmenu4()">
+         <i class='bx bxs-map' ></i>
+         <span class="links_name">Our Office locations</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a onclick="showmenu5()">
+         <i class='bx bx-first-aid' ></i>
+         <span class="links_name">Recent Check-up</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+
+     <li>
+      <a onclick="showmenu6()">
+         <i class='bx bx-question-mark' ></i>
+         <span class="links_name">complaint?</span>
+       </a>
+       <span class="tooltip">Setting</span>
+        <i class='bx bxl-facebook' id="log_out2"></i>
+        <i class='bx bxl-instagram' id="log_out2"></i>
+        <i class='bx bxl-whatsapp' id="log_out2"></i>
+        <i class='bx bxl-google' id="log_out2"></i>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="/IMG_20220227_155510.jpg"
+           <div class="name_job">
+             <div class="name">Chi-Web</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+"     </li>
+    </ul>
+  </div>
+      <div class="nav-links" id="navlinks">
+     <a onclick="hidemenu()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3>TESTS</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">         <i class='bx bxs-flask' id="flask" ></i></span>
+                      <span class="item">Lab Tests</span>
+                  </a>
+              </li>
+                  <li>
+                  <a href="#">
+                      <span class="icon">         <i class='bx bxs-chart' id="chart" ></i></span>
+                      <span class="item">X-ray Tests</span>
+                  </a>
+              </li>
+              <li>
+                  <a>
+                      <span class="icon">         <i class='bx bx-rss' id="bx-rss" ></i>
+</span>
+                      <span class="item">Ultrasound scans</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+       <div class="nav-links2" id="navlinks2">
+     <a onclick="hidemenu1()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3>STAFFS</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">         <i class='bx bxs-flask' id="flask" ></i></span>
+                      <span class="item">Lab Technicians</span>
+                  </a>
+              </li>
+                  <li>
+                  <a href="#">
+                      <span class="icon">         <i class='bx bxs-chart' id="chart" ></i></span>
+                      <span class="item">Radiologist</span>
+                  </a>
+              </li>
+              <li>
+                  <a>
+                      <span class="icon">         <i class='bx bx-rss' id="bx-rss" ></i>
+</span>
+                      <span class="item">Sonologist</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+             <div class="nav-links3" id="navlinks3">
+     <a onclick="hidemenu2()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3>Contact Us</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">                 <i class='bx bxl-facebook' id="log_out2"></i>
+</span>
+                      <span class="item">Facebook </span>
+                  </a>
+              </li>
+                  <li>
+                  <a href="#">
+                      <span class="icon">                 <i class='bx bxl-whatsapp' id="log_out2"></i>
+</span>
+                      <span class="item">Whatsapp </span>
+                  </a>
+              </li>
+              <li>
+                  <a>
+                      <span class="icon">        <i class='bx bxl-google' id="log_out2"></i>
+
+</span>
+                      <span class="item">Google </span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+
+
+             <div class="nav-links4" id="navlinks4">
+     <a onclick="hidemenu3()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3>Payment Method</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">                 <i class='bx bxs-bank' id="log_out2"></i>
+</span>
+                      <span class="item">Add Bank</span>
+                  </a>
+              </li>
+                  <li>
+                  <a href="#">
+                      <span class="icon">                 <i class='bx bx-credit-card-alt' id="log_out2"></i>
+</span>
+                      <span class="item">Credit or Debit</span>
+                  </a>
+              </li>
+              <li>
+                  <a>
+                      <span class="icon">        <i class='bx bxl-bitcoin' id="log_out2"></i>
+
+</span>
+                      <span class="item">crypto currency</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+      
+      
+      
+                   <div class="nav-links5" id="navlinks5">
+     <a onclick="hidemenu4()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3>Our Offices</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">                          <i class='bx bxs-map' ></i>
+</span>
+                      <span class="item">ASABA</span>
+                  </a>
+              </li>
+                  <li>
+                  <a href="#">
+                      <span class="icon">                      <i class='bx bxs-map' ></i>
+
+</span>
+                      <span class="item">ABUJA</span>
+                  </a>
+              </li>
+              <li>
+                  <a>
+                      <span class="icon">         <i class='bx bxs-map' ></i>
+
+</span>
+                      <span class="item">LAGOS</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+    
+      
+                         <div class="nav-links6" id="navlinks6">
+     <a onclick="hidemenu5()">
+     <i class="bx bx-left-arrow-alt"></i>
+             <P3> Patient Records</p3>
+          <ul>
+  
+              <li>
+                  <a href="#">
+                      <span class="icon">                          <i class='bx bxs-meh' ></i>
+</span>
+                      <span class="item">No Record found</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    <section id="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+      
+  <section class="header">
+        <div class="text-box">
+            <h1>Treasure Medical Diagnostic Centre</h1>
+            <p> In Treasure Medical Laboratory,we perform wide range laboratory investigations <br>with latest laboratory equipments.<br>welcome to our official page. </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+  <script src="main.js"></script>
+</body>
+        
+</html>
+
+
